@@ -16,9 +16,11 @@ def get_total_revenue():
 
 def print_total_revenue():
     total_revenue = get_total_revenue()
+    format_revenue = "%.2f" % total_revenue
+
     table = Table(title="REVENUE REPORT", show_header=True, header_style="bold steel_blue")
     table.add_column("TOTAL REVENUE", style="green")
-    table.add_row(f"{total_revenue}")
+    table.add_row(f"€ {format_revenue}")
 
     console.print(table)
 
@@ -36,12 +38,13 @@ def get_revenue_between_dates(first_date, second_date):
 
 def print_revenue_between_dates(first_date, second_date):
     total_revenue = get_revenue_between_dates(first_date, second_date)
+    format_revenue = "%.2f" % total_revenue
 
     table = Table(title="DATE REVENUE REPORT", show_header=True, header_style="steel_blue")
     table.add_column("START DATE", style="dim", no_wrap=True)
     table.add_column("END DATE", style="dim")
     table.add_column("TOTAL DATE REVENUE", style="green")
-    table.add_row(f"{first_date}", f"{second_date}",f" €{total_revenue}")
+    table.add_row(f"{first_date}", f"{second_date}",f" € {format_revenue}")
 
     console.print(table)
 

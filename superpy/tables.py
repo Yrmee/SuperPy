@@ -38,7 +38,7 @@ def display_sales():
 
     for sales_product in sales:
         table.add_row(
-            sales_product['name_product'],
+            sales_product['product_stock_id'],
             sales_product['sales_date'],
             sales_product['selling_price']
         )

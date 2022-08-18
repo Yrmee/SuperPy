@@ -46,29 +46,3 @@ def buy_product(name_product, quantity, buy_price, expiration_days):
     table.add_row(f"{name_product}", f"{quantity}", f"{buy_price}", f"{expiration_date}")
 
     console.print(table)
-
-
-
-
-"""
-    while True:
-        try:
-            quantity = int(input('AMOUNT: '))
-            break  
-        except:
-            print('Not a valid value. Please enter a valid value.\nExample: [5]')
-    
-    while True:
-        try:
-            buy_price = float(input('PRICE: '))
-            break 
-        except:
-            print('Not a valid value. Please enter a valid value.\nExample: [1.99]')
-    
-    while True:
-        try:
-            expiration_days = int(input('DAYS OF EXPIRATION: '))
-            break 
-        except:
-            print('Not a valid value. Please enter a valid value.\nExample: [5]')
-"""

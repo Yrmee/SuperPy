@@ -48,6 +48,6 @@ def print_profit_between_dates(first_date, second_date):
     table.add_column("START DATE", style="dim", no_wrap=True)
     table.add_column("END DATE", style="dim")
     table.add_column("TOTAL PROFIT", style="green")
-    table.add_row(f"{first_date}", f"{second_date}", f" €{format_profit}")
+    table.add_row(f"{first_date}", f"{second_date}", f" € {format_profit}")
 
     return console.print(table)
